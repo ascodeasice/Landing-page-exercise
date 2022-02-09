@@ -9,6 +9,9 @@ body {
     width:100%;
 }
 
+input, button, submit { border:none; }
+/*cancel default button css*/
+
 /* use viewport-relative units to cover page fully */
 body {
     height: 100vh;
@@ -16,8 +19,72 @@ body {
 }
 
 #header{
-    flex:1 1 auto;
+    display:flex;
+    justify-content: center;
+    flex-grow:1;
     background-color:#1F2937;
+}
+
+#header-content{
+    width:70%;
+}
+
+#nav-bar{
+    display:flex;
+    justify-content: space-between;
+}
+
+#header-logo{
+    margin-top:10px;
+    font-size: 24px;
+    font-weight: bolder;
+    color:#E5E7EB;
+}
+
+#link-div{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.link-text{
+    padding-top:10px;
+    margin-left:10px;
+}
+
+#description{
+    display:flex;
+}
+
+#text-btn-div{
+    width:50%;
+}
+
+.main-text{
+    margin:0;
+    font-size:48px;
+    font-weight: bolder;
+    color:#F9FAF8;
+}
+
+#sign-up-btn{
+    background-color:#3882F6;
+    width:70px;
+    height:25px;
+    border-radius: 10%;
+    color:#E5E7EB;
+}
+
+#header-img-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    background-color: #95979b;
+}
+
+.secondary-text{
+    font-size:18px;
+    color:#E5E7EB;
 }
 
 #info-div{
