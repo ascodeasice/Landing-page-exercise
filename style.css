@@ -89,7 +89,39 @@ body {
 
 #info-div{
     flex-grow:1;
+    flex-direction: column;
     background-color:white;
+}
+
+.info-header-text{
+    text-align: center;
+    font-size:36px;
+    font-weight: bolder;
+    color:#1F2937;
+}
+
+#images-div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.info-div-img{
+    width:100px;
+    height:100px;
+    border-radius: 10%;
+    border:solid #3882F6 2px;
+}
+
+.img-div{
+    width:110px;
+    display:flex;
+    flex-direction: column;
+    margin-right:30px;
+}
+
+.img-text{
+
 }
 
 #quote-div{
