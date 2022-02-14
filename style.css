@@ -13,9 +13,14 @@ input, button, submit { border:none; }
 /*cancel default button css*/
 
 /* use viewport-relative units to cover page fully */
-body {
+/* body {
     height: 100vh;
     width: 100vw;
+} */
+
+#header,#info-div,#quote-div,#call-to-action,#footer{
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 #header{
@@ -66,15 +71,15 @@ body {
     color:#F9FAF8;
 }
 
-#sign-up-btn{
+.sign-up-btn{
     background-color:#3882F6;
     width:70px;
     height:25px;
-    border-radius: 10%;
+    border-radius: 5px;
     color:#E5E7EB;
 }
 
-#sign-up-btn:hover{
+.sign-up-btn:hover{
     background-color: #6ba0f7;
 }
 
@@ -153,14 +158,38 @@ body {
 }
 
 #call-to-action{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     flex-grow:1;
     background-color:white;
 }
 
+#action-box{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 5px;
+}
+
+.action-text{
+    color:#F9FAF8;
+    margin-bottom:10px;
+}
+
+.sign-up-btn.action-btn{
+    border:solid #E5E7EB 1px;
+}
+
 #footer{
     display:flex;
-    flex-direction: column;
-    flex-grow:1;
+    justify-content: center;
     background-color:#1F2937;
     width:auto;
+}
+
+#footer-text{
+    color:#F9FAF8;
 }
